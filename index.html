@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your sleep with AI insights and interactive graphs. Improve your sleep quality with our free sleep tracker.">
+    <meta name="keywords" content="Sleep tracker, sleep monitoring, sleep analysis, AI sleep recommendations">
+    <meta name="author" content="Your Website Name">
+    <title>AI Sleep Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>AI Sleep Tracker</h1>
+        <p>Monitor, analyze, and improve your sleep quality with AI recommendations.</p>
+        <div id="login-section">
+            <input type="text" id="username" placeholder="Enter your name">
+            <button id="login-btn">Login</button>
+            <p id="greeting"></p>
+        </div>
+    </header>
+
+    <main>
+        <section class="sleep-tracker">
+            <h2>Start Sleep Tracking</h2>
+            <div class="timer-box">
+                <p id="liveTimer">00:00:00</p>
+            </div>
+            <button id="startSleep">Start Sleep</button>
+            <button id="stopSleep" disabled>Stop Sleep</button>
+            <button id="resetSleep" disabled>Reset Timer</button>
+            <p id="sleepDuration">Sleep duration will appear here.</p>
+        </section>
+
+        <section class="graph-section">
+            <h2>Sleep History & Graph</h2>
+            <canvas id="sleepChart"></canvas>
+        </section>
+
+        <section class="ai-advice">
+            <h2>AI Sleep Recommendations</h2>
+            <p id="sleepAdvice">Your AI recommendations will appear here.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AI Sleep Tracker. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
